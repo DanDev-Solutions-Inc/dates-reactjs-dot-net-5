@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import DateFnsUtils from "@date-io/date-fns";
-import { DatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
+import { DateTimePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
 import { Button, Grid } from '@material-ui/core';
 import axios from "axios";
 
@@ -31,7 +31,7 @@ const DateExample = () => {
             <Grid container spacing={2} alignItems="center">
                 <Grid item xs={8}>
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
-                        <DatePicker
+                        <DateTimePicker
                             label="Date"
                             inputVariant="outlined"
                             value={date}
